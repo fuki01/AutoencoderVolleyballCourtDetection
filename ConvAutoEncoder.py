@@ -91,8 +91,8 @@ dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 model = ConvAutoEncoder()
 
 # GPUを使う場合は、以下を実行
-device = torch.device('cpu')
-model.to(device)
+# device = torch.device('cpu')
+# model.to(device)
 
 # 損失関数の定義
 criterion = nn.MSELoss()
